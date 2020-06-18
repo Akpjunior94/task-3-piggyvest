@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Rwanda</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    footer {
+      background:rgba(0, 136, 204, 0.04);
+    }
+    @media screen and (max-width: 768px) {
+      .media{
+        /* display: none; */
+        /* flex-direction: column; */
+      }
+    }
+  </style>
+</head>
+<body class="antiliased">
+  <nav class="flex items-center justify-between flex-wrap bg-white-500 p-6 lg:mx-20 mx-2">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <img class="w-40" src="/public/img/pigylogo.png" alt="logo">
+    </div>
+    <!-- hamburger menu -->
+    <div class="block lg:hidden" id="menu-toggle">
+      <button id="menuBtn" onclick="navToggle();" type="button" class="flex items-center px-3 py-2 border rounded text-darkerblue border-darkerblue hover:text-teal-500 hover:border-teal-500">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <!-- nav-links -->
+    <div id="menu" class="w-full hidden lg:flex lg:items-center lg:w-auto media">
+      <div class="text-sm">
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkerblue hover:text-teal-500 mr-4">
+          About
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkerblue hover:text-teal-500 mr-4">
+          Stories
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkerblue hover:text-teal-500 mr-4">
+          FAQ
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkerblue hover:text-teal-500 mr-4">
+          Blog
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkerblue hover:text-teal-500 mr-4">
+          Log In
+        </a>
+      </div>
+      <div>
+        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-darkerblue border-darkerblue hover:border-transparent hover:text-white hover:bg-darkerblue mt-4 lg:mt-0">Create a Free Account</a>
+      </div>
+    </div>
+  </nav>
+  <!-- section 1 -->
+  <div class="lg:mx-20 mx-2 mt-10">
+    <h1 class="ml-6 text-3xl leading-none text-darkerblue font-semibold">Estimate Your Investment <br> Growth Over Time</h1>
+    <div class="flex lg:flex-row items-center justify-between flex-col ">
+      <div class="w-auto">
+        <img src="/public/img/New-homepage-6 1.png" alt="img">
+      </div>
+      <div class="lg:w-1/2 w-3/4">
+        <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+          Amount To lock
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-black-100 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="2500">
+        <div class="inline-block relative w-full mb-4">
+          <select class="block appearance-none w-full bg-gray-200 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 shadow leading-tight focus:outline-none focus:shadow-outline">
+            <option>Select Duration of Lock</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+        <div class="inline-block relative w-full">
+          <select class="block appearance-none w-full bg-gray-200 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 shadow leading-tight focus:outline-none focus:shadow-outline">
+            <option>Select Date</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+        <h3 class="text-darkerblue mt-8 text-center">Estimated Balance</h3>
+        <h1 class="text-bold-500 text-2xl text-center font-semibold">NGN 12,000</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 2 -->
+  <div class="lg:mx-20 mx-2 mt-10">
+    <h1 class="ml-6 text-3xl block  text-darkerblue font-semibold lg:text-center">How Does The Calculator</h1>
+    <div class="flex lg:flex-row items-center justify-between flex-col ">
+      <div class="w-auto">
+        <img src="/public/img/New-homepage-5 1.png" alt="img">
+      </div>
+      <div class="lg:w-1/2 w-3/4">
+        <p>Use our "SafeLock" feature to lock funds away so you don't have access until your set date. You also earn over 13% p.a.
+        </p>
+        <button class="bg-green-500 hover:bg-green-700 mt-10 text-white font-bold py-2 px-4 rounded">
+          Create a Free Account
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 3 -->
+  <div class="lg:mx-20 mx-4 mt-10">
+    <h1 class="lg:ml-6  block text-3xl leading-none text-darkerblue font-semibold text-center">Over &#8358;1,000,000,000 Securely Saved Every Month</h1>
+    <p class="text-center w-3/4 mt-4 mx-auto">
+      PiggyVest uses bank-level security measures to keep your data safe. <br>
+      PiggyVest users save & invest well over a billion every single month, and they are just getting started.
+    </p>
+    <div class="flex flex-col items-center ">
+      <button class="bg-darkerblue block  hover:bg-darkerblue mt-10 text-white font-bold py-4 px-8 rounded">
+        Create a Free Account
+      </button>
+      <div class="flex justify-between mt-6"> 
+        <img class="mr-3" src="/public/img/iosbadge-101-image.png" alt="ios">
+        <img src="/public/img/google-play-badge.png" alt="google">  
+      </div>  
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="lg:px-20 px-4 py-10 mt-20 lg:flex justify-between items-start">
+    <div class="lg:w-3/4 text-sm lg:text-left text-center mb-8">
+      <img class="w-45 mb-4 mx-auto lg:mx-0 " src="/public/img/pigylogo.png" alt="logo">
+      <p class="mt-3">PiggyVest (formerly piggybank.ng) is the largest online savings & investing platform in Nigeria.
+        For over 4 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.
+      </p>
+      <p class="mt-3">Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali Ayorinde Street, Victoria Island, Lagos. <br><br>
+        0700 933 933 933 (Mon-Fri from 9am-5pm) - contact@piggyvest.com
+      </p>
+      <p class="mt-3">© 2016 - 2020 PiggyTech Global Limited - RC 1405222</p>
+    </div>
+    <div class="flex justify-around lg:w-1/2">
+      <ul>
+        <li class="mb-6 font-bold">Quick Links</li>
+        <li class="mb-2 font-normal">PiggyLink</li>
+        <li class="mb-2 font-normal">AutoSave™</li>
+        <li class="mb-2 font-normal">Quick Save™</li>
+        <li class="mb-2 font-normal">SafeLock™</li>
+        <li class="mb-2 font-normal">Withdrawals & Breaking</li>
+        <li class="mb-2 font-normal">Salary Management</li>
+      </ul>
+      <div >
+        <ul>
+          <li class="mb-6 text-right font-bold">Company</li>
+          <li class="mb-2 text-right font-normal">About</li>
+          <li class="mb-2 text-right font-normal">FAQ</li>
+          <li class="mb-2 text-right font-normal">Terms of Use</li>
+          <li class="mb-2 text-right font-normal">SafeLock™</li>
+          <li class="flex"> </li>
+        </ul>
+  
+        <div class="flex mt-4">
+          <a href="#"><img class="mr-3" src="/public/img/Group.png" alt="facebook"></a>
+        <a href="#"><img class="mr-3" src="/public/img/Group-1.png" alt="twitter"></a>
+        <a href=""><img src="/public/img/instagram-sketched 1.png" alt="instagram"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      function navToggle() {
+        var btn = document.getElementById('menuBtn');
+        var nav = document.getElementById('menu');
+
+        btn.classList.toggle('open');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('hidden');
+      }
+
+      
+    </script>
+    
+  </footer>
+</body>
+</html>
